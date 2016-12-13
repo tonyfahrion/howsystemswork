@@ -36,6 +36,7 @@ It just helps me to keep an overview about topics from my daily systems tasks. H
   * if a network package gets lost, why and how can I find the root problem?
 
 
+
 ### How may github and reading code of projects be integrated in my daily doing?
 
 * while debuging problems, it often results in code reading
@@ -58,28 +59,40 @@ It just helps me to keep an overview about topics from my daily systems tasks. H
   * php
 
 
-### Which programming languages are required to be fluent in writing?
+### Which programming languages I'm required to be fluent in writing?
 
 > reading programming languages should be considert as always required and quick to learn
 
 foreach language, listed here, I might gather core facts about the language and easy entry points to understand the language quickly. Also I might cover common tasks and concepts, specific for the language. A chapter about common concepts might be required too. Just to give an overview.
 
 * golang
+
   * good for programms to distribute
   * high performance
   * recilent systems
 
 * python
+
   * scripting / automating system related tasks
   * writing simple system daemons
 
 * nodejs
+
   * writing APIs
 
 * php
+
   * a lot of web apps are written in PHP, so I need to know how it works and how I might make the apps work as I want them to work
 
 * polymer \(polymer-project from google\) \(not a language, but a key component in building web portals\)
+
+
+### Package manager and their strenghts and weaknesses
+
+* bower
+* npm
+* composer
+* pip
 
 ### systemd
 
