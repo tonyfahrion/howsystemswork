@@ -122,6 +122,20 @@ foreach language, listed here, I might gather core facts about the language and 
 * how does tectonic differ from kubernetes + dashboard?
 * is there a relation between modern Smartphones and CoreOS, focusing Android 7 with auto-update?
 
+### How distributed / scaled storage systems work with modern workload requirements
+
+* what about object stores like Ceph, Swift and the cloud alternatives?
+* what about scaling ASID compliant databases, how to scale them best?
+  * where are the pitfalls and how to solve common multi-master issues?
+
+* when not using traditional database systems, how to scale then?
+  * mongodb
+  * redis
+  * etcd
+  * confd
+  * memcached
+
+
 ### Systems automation
 
 * why should I use ansible
@@ -136,6 +150,8 @@ foreach language, listed here, I might gather core facts about the language and 
   * and why is it powerful or not powerful?
   * how is it related to ansible? \(CD\)
 
+* how to package software, or, do I need to build packages anymore?
+* 
 
 
 
