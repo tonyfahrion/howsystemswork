@@ -126,15 +126,21 @@ foreach language, listed here, I might gather core facts about the language and 
 
 * what about object stores like Ceph, Swift and the cloud alternatives?
 * what about scaling ASID compliant databases, how to scale them best?
+
   * where are the pitfalls and how to solve common multi-master issues?
 
 * when not using traditional database systems, how to scale then?
+
   * mongodb
   * redis
   * etcd
   * confd
   * memcached
 
+
+### What about backup and desaster recovery in a distributed, many replicated world?
+
+* ....
 
 ### Systems automation
 
@@ -151,7 +157,20 @@ foreach language, listed here, I might gather core facts about the language and 
   * how is it related to ansible? \(CD\)
 
 * how to package software, or, do I need to build packages anymore?
-* 
+
+
+### How does Machine Learning affect my daily tasks?
+
+may I use it for...
+* monitoring
+* continues deployments
+* continues integration
+* data analysing
+* security concerns
+* dependency awarenes for firewalling, package management, system dependencies? \(like an alerting for complexity\)
+* config analysing to discover service relations and how a request might be resolved, just by analysing code and data sets \(config, database 
+
+
 
 
 
