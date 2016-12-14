@@ -162,6 +162,7 @@ foreach language, listed here, I might gather core facts about the language and 
 ### How does Machine Learning affect my daily tasks?
 
 may I use it for...
+
 * monitoring
 * continues deployments
 * continues integration
@@ -170,7 +171,24 @@ may I use it for...
 * dependency awarenes for firewalling, package management, system dependencies? \(like an alerting for complexity\)
 * config analysing to discover service relations and how a request might be resolved, just by analysing code and data sets \(config, database 
 
+# The second part of this book: Cloud Services
 
+## What does it mean, if we think about migrations into the Cloud - for my position?
+
+* how may I need to adapt my skill sets \(back to basics, deep dive into development - extending my complexity skills\)
+* how are on prem solutions affected?
+* automate everything results in? \(more complexity for humans, easier access for programs, lower human interaction or better: consolidated workforce\)
+  * we are currently in a time of transitions - computing gets serious
+
+
+## What might come in the next 2 to 3 years in Clouding?
+
+* machine learning prepares good / "easy" access on complex data for programms
+  * we don't need to specify relations, or not all of them
+  * after preparation, an operation system and its apps is just a bunch of relations \(data structures \[config syntax, databases and tables\] and context information \[config values, generated data\], like human languages\), so why should machine learning not cover maintanance and systems setups?
+
+* automate maintanance
+* automate code analysis \(for bugs and required dependencies like RDBs, Storage, Computing, other software packages\) and its deployment
 
 
 
