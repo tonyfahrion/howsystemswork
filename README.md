@@ -173,6 +173,10 @@ may I use it for...
 
 # The second part of this book: Cloud Services
 
+Building blocks of the Cloud
+
+* API services which benefit from a scaled customer base like machine learning services and big data
+
 ## What does it mean, if we think about migrations into the Cloud - for my position?
 
 * how may I need to adapt my skill sets \(back to basics, deep dive into development - extending my complexity skills\)
@@ -184,10 +188,12 @@ may I use it for...
 ## What might come in the next 2 to 3 years in Clouding?
 
 * machine learning prepares good / "easy" access on complex data for programms
+
   * we don't need to specify relations, or not all of them
   * after preparation, an operation system and its apps is just a bunch of relations \(data structures \[config syntax, databases and tables\] and context information \[config values, generated data\], like human languages\), so why should machine learning not cover maintanance and systems setups?
 
 * automate maintanance
+
 * automate code analysis \(for bugs and required dependencies like RDBs, Storage, Computing, other software packages\) and its deployment
 
 
