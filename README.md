@@ -167,16 +167,15 @@ Install kvmtool via \`apt install kvmtool\`
 ### Systems automation
 
 * why should I use ansible
-
   * in a traditional szenario \(VMs/bare metal\) it's more or less clear
   * but which role does it have in a kubernetes, autoscaling container world?
   * how might it help with CI/CD, or not help?
 
-* gitlab CI
-
+* [gitlab CI](https://about.gitlab.com/gitlab-ci/)
   * how does it work
   * and why is it powerful or not powerful?
   * how is it related to ansible? \(CD\)
+  * how is it different to [Quay from CoreOS](https://quay.io)
 
 * how to package software, or, do I need to build packages anymore?
 
