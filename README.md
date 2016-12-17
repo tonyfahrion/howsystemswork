@@ -106,13 +106,9 @@ foreach language, listed here, I might gather core facts about the language and 
 ### modern metric gathering
 
 * what role does prometheus play?
-
 * how is this related to influxdb?
-
 * why might monitoring just be analysing datapoints?
-
 * how about TS \(timeseries\) DBs in general? (compairson [spreadsheet](https://docs.google.com/spreadsheets/d/1sMQe9oOKhMhIVw9WmuCEWdPtAoccJ4a-IuZv4fXDHxM/edit#gid=0))
-
   * influxdb
   * dalmatinerdb (https://dalmatiner.io/)
   * riak ts (http://basho.com/products/riak-ts/ (why is https not default here?), [architecture overview](http://info.basho.com/rs/721-DGT-611/images/RiakTS-Enterprise-Technical-Overview.PDF))
