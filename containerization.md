@@ -1,6 +1,6 @@
 # Containers and the role of the ecosystem
 
-* which roles plays CoreOS?
+* which role plays CoreOS?
 * why is CoreOS tectonic good / bad?
 * how does tectonic differ from kubernetes + dashboard?
 * is there a relation between modern Smartphones and CoreOS, focusing Android 7 with auto-update?
@@ -24,9 +24,9 @@
 
 \(from its [architecture documentation](https://coreos.com/rkt/docs/latest/devel/architecture.html)\)
 
-As it states out in the above quote, CoreOS seems to have a philosophy problem with docker :\). It's kind of funny, but I agree with them. What they criticized here is, that docker runs a daemon \(normaly as root, as far as I remember\) on the system and all container instances are a subprocess \(fork\) of that deamon. All instances are controlled by the deamon. This is really a bad idea! We are talking about infrastructure stuff here. Infrastructure should always be robust agains defects and should try to isolate occuring disrutions \(in this case, with docker, the running containers might be affected by a bug within docker\).
+As it states out in the above quote, CoreOS seems to have a philosophy problem with docker :\). It's kind of funny, but I agree with them. What they criticized here is, that docker runs a daemon \(normally as root, as far as I remember\) on the system and all container instances are a subprocess \(fork\) of that daemon. All instances are controlled by the daemon. This is really a bad idea! We are talking about infrastructure stuff here. Infrastructure should always be robust against defects and should try to isolate occurring disruptions \(in this case, with docker, the running containers might be affected by a bug within docker\).
 
-The next point for rkt seems to be flexibilty - as rkt seems to be able to spawn containers with different user contextes each. This is a huge plus! I think, doing container isolation in userland is a bad idea. It affects a lot of code. So the risk of bugs and security issues is high, getting it stable is more difficult and I prever my rule of thumbs: Keep security layers as low \(in case of least software level, or as near to easy principels\) as possible. If you need complex ACLs, it will be difficult to maintain, more difficult to transport the security concept idea and the risk to loose an overall view gets to high.
+The next point for rkt seems to be flexibility - as rkt seems to be able to spawn containers with different user contexts each. This is a huge plus! I think, doing container isolation in userland is a bad idea. It affects a lot of code. So the risk of bugs and security issues is high, getting it stable is more difficult and I prefer my rule of thumbs: Keep security layers as low \(in case of least software level, or as near to easy principles\) as possible. If you need complex ACLs, it will be difficult to maintain, more difficult to transport the security concept idea and the risk to loose an overall view gets to high.
 
 * might be an issue: portability, because rkt seems to depend on kvm - may be Linux only (hosts, not guests)
 
@@ -34,5 +34,5 @@ The next point for rkt seems to be flexibilty - as rkt seems to be able to spawn
 
 ## Docker - the most prominent container format / tooling
 
-* my opinion: badly designed, quick development \(focus on output, not quality; achitecture seems to be done by a developer, not an infrastructure guy\)
+* my opinion: badly designed, quick development \(focus on output, not quality; architecture seems to be done by a developer, not an infrastructure guy\)
 * similar to wordpress: not well written, but has a strong community and is therefor a strong force with a long breath. (this is my first impression of the project)
