@@ -4,7 +4,7 @@
 
 This is my view of how my daily Systems world works. It is not an intend to produce the most profound Systems documentation out there. It does not aim for full coverage!
 
-It just helps me to keep an overview about topics from my daily systems tasks. How stuf is related to each other and what are the different building blocks.
+It just helps me to keep an overview about topics from my daily systems tasks. How stuff is related to each other and what are the different building blocks.
 
 ## Topics to cover
 
@@ -13,7 +13,6 @@ It just helps me to keep an overview about topics from my daily systems tasks. H
 * debugging is a lot more complex \(what are ...?\)
 
   * linux kernel
-
     * network / fs namespaces
     * routing of network packages within the linux kernel \(how do namespaces affect the normal package flow?\)
     * cgroups
@@ -23,25 +22,37 @@ It just helps me to keep an overview about topics from my daily systems tasks. H
     * pitfalls of distributed storage solutions?
 
   * kubernetes / container management
-
     * where are pitfalls?
-    * how to fix occuring problems here?
-    * what are occational issues while operating a cluster?
+    * how to fix ordinary problems here?
+    * what are usual issues while operating a cluster?
 
   * docker
-
     * which stages does docker touch, while running an instance? is there any, or does docker just some command delegation to the linux stack?
 
-  * why migth different versions of kubernetes, linux kernel and docker be a problem? \(try to define each domain and the overlapping interfaces / area of operation\)
-
+  * why might different versions of kubernetes, linux kernel and docker be a problem? \(try to define each domain and the overlapping interfaces / area of operation\)
   * if a network package gets lost, why and how can I find the root problem?
+
+### Basic principles
+
+* Do data / communication verification (security rules) on the smallest layer possible
+  * to make use of easy to understand principles
+  * to require a general thumb of rules
+  * to require to understand the real problem
+  * to enforce a good design (trying to apply a general security layer will test your concept)
+  * to enforce an as simple as possible solution (at least, its more probable to get a simple one)
+
+* What are indicators for probably healthy and promising OpenSource projects?
+* Principles in programming?
+* Principles in infrastructure design?
+* What about small scripts - are they useful? => yes they are, why?
+* What about huge monolithic projects - are they useful? => yes they are, why?
 
 ### How may github and reading code of projects be integrated in my daily doing?
 
 * while debuging problems, it often results in code reading
 
   * how might this get easier?
-  * can I automate it a litle bit more?
+  * can I automate it a little bit more?
   * are there common questions, so I might be able to develop a common query interface?
 
 * common projects of interest
@@ -59,15 +70,15 @@ It just helps me to keep an overview about topics from my daily systems tasks. H
 
 ### Which programming languages I'm required to be fluent in writing?
 
-> reading programming languages should be considert as always required and quick to learn
+> reading programming languages should be considered as always required and quick to learn
 
-foreach language, listed here, I might gather core facts about the language and easy entry points to understand the language quickly. Also I might cover common tasks and concepts, specific for the language. A chapter about common concepts might be required too. Just to give an overview.
+For each language, listed here, I might gather core facts about the language and easy entry points to understand the language quickly. Also I might cover common tasks and concepts, specific for the language. A chapter about common concepts might be required too. Just to give an overview.
 
 * golang
 
-  * good for programms to distribute
+  * good for programs to distribute
   * high performance
-  * recilent systems
+  * resilient systems
 
 * python
 
@@ -107,7 +118,7 @@ foreach language, listed here, I might gather core facts about the language and 
 
 * what role does prometheus play?
 * how is this related to influxdb?
-* why might monitoring just be analysing datapoints?
+* why might monitoring just be analyzing datapoints?
 * how about TS \(timeseries\) DBs in general? (compairson [spreadsheet](https://docs.google.com/spreadsheets/d/1sMQe9oOKhMhIVw9WmuCEWdPtAoccJ4a-IuZv4fXDHxM/edit#gid=0))
   * influxdb
   * dalmatinerdb (https://dalmatiner.io/)
@@ -149,7 +160,7 @@ Install kvmtool via \`apt install kvmtool\`
   * confd
   * memcached
 
-### What about backup and desaster recovery in a distributed, many replicated world?
+### What about backup and disaster recovery in a distributed, many replicated world?
 
 * ....
 
@@ -176,10 +187,10 @@ may I use it for...
 * monitoring
 * continues deployments
 * continues integration
-* data analysing
+* data analyzing
 * security concerns
-* dependency awarenes for firewalling, package management, system dependencies? \(like an alerting for complexity\)
-* config analysing to discover service relations and how a request might be resolved, just by analysing code and data sets \(config, database 
+* dependency awareness for firewalling, package management, system dependencies? \(like an alerting for complexity\)
+* config analyzing to discover service relations and how a request might be resolved, just by analyzing code and data sets \(config, database 
 
 # The second part of this book: Cloud Services
 
@@ -196,11 +207,11 @@ Building blocks of the Cloud
 
 ## What might come in the next 2 to 3 years in Clouding?
 
-* machine learning prepares good / "easy" access on complex data for programms
+* machine learning prepares good / "easy" access on complex data for programs
 
   * we don't need to specify relations, or not all of them
-  * after preparation, an operation system and its apps is just a bunch of relations \(data structures \[config syntax, databases and tables\] and context information \[config values, generated data\], like human languages\), so why should machine learning not cover maintanance and systems setups?
+  * after preparation, an operation system and its apps is just a bunch of relations \(data structures \[config syntax, databases and tables\] and context information \[config values, generated data\], like human languages\), so why should machine learning not cover maintenance and systems setups?
 
-* automate maintanance
+* automate maintenance
 
 * automate code analysis \(for bugs and required dependencies like RDBs, Storage, Computing, other software packages\) and its deployment
