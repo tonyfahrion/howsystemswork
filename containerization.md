@@ -4,17 +4,57 @@
 * why is CoreOS tectonic good / bad?
 * how does tectonic differ from kubernetes + dashboard?
 * is there a relation between modern Smartphones and CoreOS, focusing Android 7 with auto-update?
+* learn more about kubernetes...
 
 ## Still to be read on this topic
+
+
+### Containers
 
 * [ ] https://about.gitlab.com/2015/08/19/quayio/ \(CI guest article from CoreOS\)
 * [ ] https://coreos.com/rkt/docs/latest/devel/architecture.html
 * [ ] https://coreos.com/blog/rkt-detect-privilege-escalation.html
 * [ ] https://coreos.com/rkt/docs/latest/running-kvm-stage1.html
 * [ ] https://clearlinux.org/features/intel%C2%AE-clear-containers (who is using this docker/rkt/other?)
+
+
+### Kubernetes
+
+* [ ] http://blog.kubernetes.io/2016/12/five-days-of-kubernetes-1.5.html
+* [ ] http://blog.kubernetes.io/2016/12/windows-server-support-kubernetes.html
+* [ ] http://kubernetes.io/docs/user-guide/networkpolicies/
+* [ ] http://blog.kubernetes.io/2016/12/statefulset-run-scale-stateful-applications-in-kubernetes.html
+* [ ] http://blog.kubernetes.io/2016/12/kubernetes-1.5-supporting-production-workloads.html
+
+
+### CoreOS
+
+* [ ] download and analyze a coreos package
+  * [ ] how is it structured?
+  * [ ] which versions are used?
+  * [ ] is the kernel stripped down?
+  * [ ] how did they do the init system integration?
+* [ ] https://github.com/coreos/coreos-kubernetes (Kubernetes on CoreOS docs)
+* [ ] https://coreos.com/os/docs/latest/sdk-modifying-coreos.html (CoreOS developer SDK guide)
+* [ ] is CoreOS based on Gentoo? (that would be a good move I should have done with CloudOS... lessons learned ;) )
+  * [ ] https://github.com/coreos/coreos-overlay (customizations on gentoo ebuilds)
+* [ ] Ignition ( https://github.com/coreos/ignition )
+  * [ ] https://github.com/coreos/ignition/blob/master/doc/getting-started.md (init config system)
+  * [ ] https://coreos.com/ignition/docs/latest/what-is-ignition.html
+* [ ] Torus - Distributed Storage System ( https://github.com/coreos/torus )
+* [ ] https://github.com/coreos/coreos-baremetal
+* [ ] Managed on prem solution: https://tectonic.com/
+* [ ] RKT
+  * [ ] https://coreos.com/blog/rkt-detect-privilege-escalation.html
+  * [ ] https://coreos.com/blog/rkt-and-kubernetes.html
+* [ ] https://coreos.com/blog/containers-to-clusters.html
+* [ ] Container CI: https://blog.quay.io/
+
 * **more to come**
 
 ## RKT - by CoreOS
+
+* Project: https://github.com/coreos/rkt
 
 * supports KVM \(by LKVM, aka KVM stage 1\) based virtualisation layer for better container control and easier container isolation
 
@@ -33,6 +73,8 @@ The next point for rkt seems to be flexibility - as rkt seems to be able to spaw
 **more to come here**
 
 ## Docker - the most prominent container format / tooling
+
+* Project: https://github.com/docker/docker
 
 * my opinion: badly designed, quick development \(focus on output, not quality; architecture seems to be done by a developer, not an infrastructure guy\)
 * similar to wordpress: not well written, but has a strong community and is therefor a strong force with a long breath. (this is my first impression of the project)

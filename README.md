@@ -113,6 +113,9 @@ For each language, listed here, I might gather core facts about the language and
 
 * where is graylog positioned
 * how does it differ from logstash
+* how about fluentd?
+  * https://cloud.google.com/solutions/real-time/fluentd-bigquery
+  * http://www.fluentd.org/architecture
 
 ### modern metric gathering
 
@@ -214,3 +217,27 @@ Building blocks of the Cloud
 * automate maintenance
 
 * automate code analysis \(for bugs and required dependencies like RDBs, Storage, Computing, other software packages\) and its deployment
+
+# The third part of this book: Software Engineering
+
+## Useful algorithm for...
+
+* Sorting / Filtering a huge amount of data via Map / Reduce?
+* ...
+
+## Useful data structures
+
+* which perform well, are "easy" search/query able
+* are lightweight (in case of storage space and complexity)
+
+## How do ASTs work?
+
+* Which data structures are in use?
+* How to query?
+* How encode them for machine learning? (like natural language processing)
+* How does it work with...
+  * PHP
+  * Python
+  * Golang
+  * JavaScript
+* 
